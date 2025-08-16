@@ -1,0 +1,15 @@
+# Dependencias
+/vendor
+/node_modules
+
+# Archivos de configuración local
+.env
+
+# Archivos de build de Vite
+/public/build
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+/storage

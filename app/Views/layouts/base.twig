@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}PicoFrame{% endblock %}</title>
+    
+    {{ vite.assets()|raw }}
+    
+    <style>
+        body { visibility: hidden; }
+        .main-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary border-bottom border-body">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">
+                🚀 PicoFrame
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="text-center text-muted small py-4 border-top">
+        <div class="container">
+            <p class="mb-0">Creado con PicoFrame. Un micro-framework PHP ligero y moderno.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

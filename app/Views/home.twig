@@ -1,0 +1,25 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <div class="display-1 text-center user-select-none opacity-25" style="font-size: 10rem;">🚀</div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold lh-1 mb-3">PicoFrame</h1>
+                <p class="lead">
+                    Un punto de partida minimalista para tus ideas en PHP.
+                    Moderno, rápido y sin complicaciones. Creado con una estructura limpia,
+                    rutas, ORM, y las herramientas que necesitas para empezar a construir.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="/contact" class="btn btn-primary btn-lg px-4 me-md-2">Empezar</a>
+                    <a href="#" class="btn btn-outline-secondary btn-lg px-4">Leer Docs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

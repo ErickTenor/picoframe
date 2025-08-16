@@ -1,0 +1,20 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}Mensaje Enviado{% endblock %}
+
+{% block content %}
+    <div class="container text-center py-5">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold">¡Gracias por tu mensaje!</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Hemos recibido tu consulta. La protección CSRF ha funcionado correctamente,
+                    asegurando que tu envío sea legítimo.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="/" class="btn btn-primary btn-lg px-4">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
